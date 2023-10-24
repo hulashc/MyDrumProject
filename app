@@ -38,6 +38,7 @@ kick = mixer.Sound('sounds\kick.wav')
 crash = mixer.Sound('sounds\crash.wav')
 clap = mixer.Sound('sounds\clap.wav')
 floortom = mixer.Sound('sounds\\tom.wav')
+pygame.mixer.set_num_channels(instruments * 3)
 
 def play_notes():
     for i in range(len(clicked)):
