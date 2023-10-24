@@ -105,6 +105,10 @@ while run:
     screen.fill(black)
     boxes = draw_grid(clicked, active_beat)
     global clicks
+    # lower menu buttons
+    play_pause = pygame.draw.rect(screen, grey, (0, HEIGHT - 200, 200, 200), 5)
+
+
     if beat_changed:
         play_notes()
         beat_changed = False
